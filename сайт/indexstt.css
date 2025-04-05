@@ -1,0 +1,919 @@
+@font-face {
+    font-family: "Gotham Pro";
+    src: url(.шрифты/gothampro.ttf);
+    src: url(.шрифты/gothampro_light.ttf);
+    src: url(.шрифты/gothampro_bold.ttf);
+
+    font-family: "Akony";
+    src: url(.шрифты/akony-bold.otf);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+    .menu_navigation {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .menu-item {
+        font-size: 1em;
+        margin-right: 0;
+        padding: 8px;
+    }
+
+    .header-h1 {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    .header-p {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .header_buttons_container {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 20px;
+    }
+
+    .head_button_one,
+    .head_button_two {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .image-container_one img,
+    .image-container_two img,
+    .image-container_three img {
+        margin-left: 0;
+    }
+
+    .overlay-text_subtitle_one,
+    .overlay-text_one,
+    .overlay-text_subtitle_two,
+    .overlay-text_two,
+    .overlay-text_subtitle_three,
+    .overlay-text_three {
+        margin-left: 0 !important;
+        text-align: center;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 16px;
+    }
+
+    .skills_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts_buttons_container {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .contacts_button_one,
+    .contacts_button_two,
+    .contacts_button_three {
+        width: 100%;
+    }
+
+    footer.form,
+    .footer {
+        text-align: center;
+    }
+
+    .footer_columns {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: "Gotham Pro", bold;
+}
+
+:root {
+    --accent-color: #750303;
+    --background-color: #000000;
+}
+
+.container {
+    max-width: 1412px;
+    margin: 0 auto;
+}
+
+
+/* Общие стили */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Gotham Pro';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+
+    background: url('фото/Group 10.png') no-repeat top center;
+
+    background-size: 1550px 6000px; 
+    padding: 50px 0;
+    text-align: left;
+}
+
+#main {
+    .header-container { 
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        
+
+
+.header-h1 {
+    margin-top: 250px;
+    margin-left: 100px;
+    font-size:80px;
+    color: #fff;
+    font-family: "Gotham Pro";
+    font-weight: bold;
+    width: 505px;height: 192px;
+}
+
+.header-p {
+        margin-top: 35px; 
+        margin-left: 100px;
+    font-size: 25px;
+    font-family: "Gotham Pro";
+    font-weight: lighter;
+    display: flex;
+    align-items: left;
+}
+
+
+/* Кнопки */
+
+.head_button_one:hover, .head_button_two:hover {
+    box-shadow: 0 0 15px rgba(235, 6, 6, 0.8);
+}
+
+.head_button_one {
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0);
+    transition: box-shadow 0.3s;
+    width: 215px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #7907078a;
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-weight: lighter;
+    background-color: #00000000;
+    padding: 15px 35px;
+    cursor: pointer;
+    margin-top: 35px; 
+    margin-left: 100px;
+}
+
+.head_button_two {
+     background-color: #222;
+    color: #fff;
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0);
+    transition: box-shadow 0.3s;
+    box-sizing: border-box;
+    border: 2px solid #7907078a;
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-weight: lighter;
+    background-color: #7907078a;
+    padding: 15px 35px;
+    cursor: pointer;
+    margin-top: 35px; 
+}
+
+.header_buttons_container {
+    display: flex;       
+    justify-content: flex-start;
+    margin-top: 40px;
+    gap: 50px;    
+}
+
+}
+}
+
+.menu_navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: "Gotham Pro";
+    font-weight: lighter;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 226px;
+}
+.menu-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-item:hover {
+    color: #ff0000;
+}
+
+
+/* Секция "Обо мне" */
+#info {
+    margin-top: 350px;
+    min-height: 1000px;
+    background-size: 1550px 1000px; 
+    padding: 50px 0;
+    text-align: center;
+}
+
+.p_title {
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Akony";
+}
+
+.p_title_op {
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Akony";
+}
+
+.image-container_one {
+    position: relative; 
+    display: inline-block; 
+    width: 100%; 
+    max-width: 600px; 
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.image-container_one img {
+    width: 100%;
+    display: block;
+    margin-left: 450px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.overlay-text_subtitle_one {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 558px;
+}
+
+.overlay-text_one {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 535px;
+    display: block;
+    width: 100%; 
+}
+
+
+.image-container_two {
+    position: relative; 
+    display: inline-block; 
+    width: 100%; 
+    max-width: 600px; 
+    text-align: right;
+    margin-bottom: 20px
+}
+
+.image-container_two img {
+    width: 100%;
+    display: block;
+    margin-left: 360px;
+    margin-bottom: 20px
+}
+
+.overlay-text_subtitle_two {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 180px;
+}
+
+.overlay-text_two {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 425px;
+    display: block;
+    width: 100%; 
+}
+
+.image-container_three {
+    position: relative; 
+    display: inline-block; 
+    width: 100%; 
+    max-width: 600px; 
+    text-align: right;
+}
+
+.image-container_three img {
+    width: 100%;
+    display: block;
+    margin-left: 450px;
+}
+
+.overlay-text_subtitle_three {
+    position: absolute;
+    top: -9%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 580px;
+}
+
+.overlay-text_three {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 550px;
+    display: block;
+    width: 100%; 
+}
+
+.image-container_one,
+.image-container_two,
+.image-container_three {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.image-container_one:hover,
+.image-container_two:hover,
+.image-container_three:hover {
+    transform: scale(1.05); 
+}
+
+/* Навыки */
+#skills {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 30px;
+    min-height: 1000px;
+    background-size: 1550px 1000px; 
+}
+
+.cub-container_one {
+    width: 320px;  /* Ширина квадрата */
+    height: 180px; /* Высота квадрата */
+    background-color: #6400004f;
+    position: relative;
+    font-family: "Gotham Pro";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto; 
+    font-size: 18px;
+    margin-top: 180px;
+    position: relative; 
+    text-align: right;
+    margin-left: 80px;
+    transform: rotate(-7deg);
+    z-index: 1;
+    margin-bottom: -50px
+}
+
+.skills-item_title_one {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.skills-item_text_one {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 19px;
+    font-weight: lighter;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: left;
+    display: block;
+    width: 100%; 
+}
+
+.cub-container_two {
+    width: 320px;  /* Ширина квадрата */
+    height: 180px; /* Высота квадрата */
+    background-color: #6400004f;
+    position: relative;
+    font-family: "Gotham Pro";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto; 
+    font-size: 18px;
+    margin-top: 25px;
+    position: relative; 
+    text-align: right;
+    margin-left: 320px;
+        transform: rotate(7deg);
+        z-index: 2;
+    margin-bottom: -50px
+}
+
+.skills-item_title_two {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.skills-item_text_two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 19px;
+    font-weight: lighter;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: left;
+    display: block;
+    width: 100%; 
+}
+
+.cub-container_three {
+    width: 320px;  /* Ширина квадрата */
+    height: 180px; /* Высота квадрата */
+    background-color: #6400004f;
+    position: relative;
+    font-family: "Gotham Pro";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto; 
+    font-size: 18px;
+    margin-top: 25px;
+    position: relative; 
+    text-align: right;
+    margin-left: 80px;
+    transform: rotate(-7deg);
+}
+
+.skills-item_title_three {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.skills-item_text_three {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 19px;
+    font-weight: lighter;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: left;
+    display: block;
+    width: 100%; 
+}
+.cub-container_one:hover,
+.cub-container_two:hover,
+.cub-container_three:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Портфолио */
+#portfolio {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 30px;
+    min-height: 1000px;
+    background-size: 1550px 1000px; 
+}
+
+.port-container_one {
+    width: 580px;  /* Ширина квадрата */
+    height: 410px; /* Высота квадрата */
+    position: relative;
+    font-family: "Gotham Pro";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto; 
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 500px;
+    z-index: 1;
+    margin-bottom: -100px
+}
+
+.text-p_subtitle_port_one{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 100%; 
+}
+
+.port-container_two {
+    width: 580px;  /* Ширина квадрата */
+    height: 410px; /* Высота квадрата */
+    position: relative;
+    font-family: "Gotham Pro";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto; 
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 650px;
+    z-index: 2;
+}
+
+.text-p_subtitle_port_two{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Gotham Pro";
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 100%; 
+}
+
+.port-container_one:hover,
+.port-container_two:hover {
+    animation: pulse 0.5s ease-in-out;
+}
+
+/* Контакты */
+#contacts {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 30px;
+    min-height: 1000px;
+    background-size: 1550px 1000px; 
+}
+
+.contacts_buttons_container {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start; 
+    gap: 35px; 
+    margin-top: 200px;
+    margin-left: 150px;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.contacts_button_one {
+    background-color: #60000000;
+    border: 2px solid #7907078a;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    width: 380px;
+    height: 100px;
+    text-align: center;
+}
+
+.contacts_button_two {
+    background-color: #7907078a;
+    border: 2px solid #7907078a;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    width: 380px;
+    height: 100px;
+    text-align: center;
+}
+
+.contacts_button_three {
+    background-color: #60000000;
+    border: 2px solid #7907078a;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    width: 380px;
+    height: 100px;
+    text-align: center;
+}
+
+.contacts_buttons_container button:hover {
+   box-shadow: 0 8px 16px rgba(255, 0, 0, 0.5);
+   transform: scale(1.05);
+}
+
+.contacts_buttons_container button:active {
+    transform: scale(0.95);
+    transition: 0.2s;
+    background-color: #cc0000;
+}
+
+/* Форма */
+.form {
+    padding: 50px 0;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+.form form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.form label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #000000;
+    border: 1px solid #600000;
+    color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    background-color: #600000;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.form-buttons button:hover {
+    background-color: #b41c1c;
+    transform: scale(1.05);
+}
+
+.p_title_op {
+    margin-top: -50px;
+    margin-bottom: 100px
+}
+
+
+/* Подвал */
+.footer {
+    background-color: #000000;
+    color: #eee;
+    padding: 40px 0 20px;
+    font-family: "Gotham Pro", sans-serif;
+}
+
+.footer_container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: left;
+}
+
+.footer_logo h3 {
+    font-size: 24px;
+    color: #d60000;
+    margin-bottom: 10px;
+    color: #ffffff; /* Красный неон */
+    text-shadow:
+        0 0 5px #8b0303,
+        0 0 10px #8b0303,
+        0 0 20px #8b0303,
+        0 0 40px #8b0303,
+        0 0 60px #8b0303;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.footer_nav h4,
+.footer_contacts h4 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer_nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_nav ul li {
+    margin-bottom: 6px;
+}
+
+.footer_nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_nav ul li a:hover {
+    color: #be1e1e;
+}
+
+.footer_contacts p {
+    margin: 6px 0;
+}
+
+.footer_bottom {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+}
+
+.main, .info, .skills, .portfolio, .contacts, .form  {
+    min-height: 100vh; 
+    padding: 50px 0;  
+}

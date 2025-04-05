@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="indexstt.css">
+</head>
+<body>
+
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="navigation">
+                <div class="head">
+                    <nav class="menu_navigation">
+                        <a class="menu-item" href="#main">Главная</a>
+                        <a class="menu-item" href="#info">Обо мне</a>
+                        <a class="menu-item" href="#skills">Навыки</a>
+                        <a class="menu-item" href="#portfolio">Портфолио</a>
+                        <a class="menu-item" href="#contacts">Контакты</a>
+                    </nav>
+    
+
+                 <!-- Главная -->
+            <section id="main">
+                <div class="container">
+                        <div class="flex_container_header">
+                            <div class="header-container">
+                                <h1 class="header-h1">Кристина Старцева</h1>
+                                <p class="header-p">Студентка группы 21 ИСиП-В</p>
+                            <div class="header_buttons_container">
+                                <button class="head_button_one" onclick="scrollToSection('info')">ПОДРОБНЕЕ</button>
+                                <button class="head_button_two" onclick="scrollToSection('contacts')">СВЯЗАТЬСЯ СО МНОЙ</button>
+                            </div>
+                            </div>
+                       </div>
+                </div>
+            </section>
+
+
+                    <!-- Обо мне -->
+    <section id="info">
+            <div class="info_flex">
+                <div class="info-left_section">
+                    <p class="p_title">Обо мне</p>
+                    <div class="info-left_item">
+                        <div class="image-container_one">
+                            <img class="firstblock" src="фото/Снимок экрана 2025-03-31 162637 2.png" alt="firstblock">
+                            <p class="overlay-text_subtitle_one">Биография</p>
+                        <p class="overlay-text_one">Меня зовут Кристина, я выросла 
+                            <br> в селе Борисполье Ракитянского района. 
+                            <br>С детства увлекаюсь дизайном.</p>
+                        </div>
+                        <div class="image-container_two">
+                            <img class="secondblock" src="фото/Снимок экрана 2025-03-31 162637 3.png" alt="secondblock">
+                        <p class="overlay-text_subtitle_two">Образование</p>
+                        <p class="overlay-text_two">Окончила 9 классов Бобравской СОШ 
+                            <br> с красным аттестатом. На данный момент 
+                            <br> обучаюсь в Белгородском 
+                            <br>индустриальном колледже.</p>
+                </div>
+                    <div class="image-container_three">
+                    <img class="thirdblock" src="фото/Снимок экрана 2025-03-31 162637 1.png" alt="thirdblock">
+                        <p class="overlay-text_subtitle_three">Увлечения</p>
+                        <p class="overlay-text_three">В свободное время я занимаюсь 
+                            <br> кастомом одежды, изучаю дизайн
+                            <br> и читаю книги.</p>
+                </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <!-- Навыки -->
+    <section id="skills">
+        <div class="container">
+            <div class="skills_flex">
+                <p class="p_title">Навыки</p>
+                <div class="skills_container">
+                        <div class="cub-container_one">
+                            <p class="skills-item_title_one">Кастомизация одежды</p>
+                            <p class="skills-item_text_one">Cоздаю уникальные дизайны на одежде, работаю с красками, принтами и различными материалами.</p>
+                        </div> 
+                        <div class="cub-container_two">
+                            <p class="skills-item_title_two">Монтаж</p>
+                            <p class="skills-item_text_two">Занимаюсь обработкой видео: нарезка, цветокоррекция, эффекты.</p>
+                        </div>
+                        <div class="cub-container_three">
+                            <p class="skills-item_title_three">Графический дизайн</p>
+                      <p class="skills-item_text_three">Разрабатываю визуальное оформление для соцсетей, афиш, логотипов и других креативных проектов.</p>
+                   </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Портфолио -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="portfolio_flex">
+                <div class="portfolio-left_section">
+                    <p class="p_title">Портфолио</p>
+                    <div class="portfolio-left_item">
+                        <div class="port-container_one">
+                        <p class="text-p_subtitle_port_one">Кастом</p>
+                        <img class="custom" src="фото/Group 9.png" alt="custom">
+                    </div>
+                    <div class="port-container_two">
+                        <p class="text-p_subtitle_port_two">Графический дизайн</p>
+                        <img class="graf" src="фото/Group 8.png" alt="graf">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Контакты -->
+    <section id="contacts">
+        <div class="container">
+            <div class="contacts_flex">
+                <div class="contacts-left_section">
+                    <p class="p_title">Контакты</p>
+                    <div class="contacts-left_item">
+                        <div class="contacts_buttons_container">
+                            <a href="https://vk.com/tinnyks" target="_blank">
+                            <button class="contacts_button_one">VKONTAKTE</button>
+                        </a>
+                        <a href="https://t.me/netinnyks" target="_blank">
+                            <button class="contacts_button_two">TELEGRAM</button>
+                        </a>
+                        <a href="https://wa.me/89040954391" target="_blank">
+                            <button class="contacts_button_three">WHATSAPP</button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Форма -->
+    <footer class="form">
+        <p class="p_title_op">Форма</p>
+        <form action="https://formspree.io/f/xldjpypn" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Возьмете меня на работу?</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <div class="form-buttons">
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+            </div>
+        </form>
+    </footer>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_columns">
+    
+                <div class="footer_logo">
+                    <h3>Кристина Старцева</h3>
+                    <p>Ваш творческий помощник! ❤️</p>
+                </div>
+    
+                <div class="footer_nav">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#info">Обо мне</a></li>
+                        <li><a href="#skills">Навыки</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer_contacts">
+                    <h4>Контакты</h4>
+                    <p>📞 8-904-095-43-91</p>
+                    <p>📧 krisstv07@mail.ru</p>
+                    <p>💬 Telegram: @netinnyks</p>
+                </div>
+    
+            </div>
+    
+            <div class="footer_bottom">
+                <p>© 2025 Кристина Старцева. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+        <script>
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({
+                        behavior: 'smooth', // Плавная прокрутка
+                        block: 'start' // Прокрутка так, чтобы секция была сверху
+                    });
+                }
+            }
+        </script>
+
+<script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      });
+  
+      if (response.ok) {
+        form.innerHTML = "<p style='color: #fff; font-size: 1.2em;'>Спасибо! Ваше сообщение отправлено 🎉</p>";
+      } else {
+        form.innerHTML = "<p style='color: red;'>Произошла ошибка. Попробуйте позже.</p>";
+      }
+    });
+  </script>
+
+</body>
+</html>
